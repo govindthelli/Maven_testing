@@ -10,7 +10,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'docker run -d -p 8085:8085 --name maven-container maven'
+        sh 'docker run -d -p 8085:8080 --name maven-container maven'
       }
     }
   }
